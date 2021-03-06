@@ -47,9 +47,9 @@ function start(){
     // Se desactiva el evento click del botón Start
     btnStart.removeEventListener("click", start);
     // Se oculta el botón Start y se muestran los botones Stop y Reset
-    document.getElementById('btn-start').style.display = 'none';
-    document.getElementById('btn-stop').style.display = 'flex';
-    document.getElementById('btn-reset').style.display = 'flex';
+    btnStart.style.display = 'none';
+    btnStop.style.display = 'flex';
+    btnReset.style.display = 'flex';
 }
 
 function stop(){
@@ -58,8 +58,8 @@ function stop(){
     // Se habilita el evento click del botón Start
     btnStart.addEventListener("click", start);
     // Se oculta el botón Stop y luego se muestra el botón Start
-    document.getElementById('btn-stop').style.display = 'none';
-    document.getElementById('btn-start').style.display = 'flex';
+    btnStop.style.display = 'none';
+    btnStart.style.display = 'flex';
 }
 
 function reset(){
@@ -70,7 +70,7 @@ function reset(){
     h= 0; m= 0; s= 0; mls= 0;
     btnStart.addEventListener("click", start);
     // Se ocultan los botones Stop y Reset, y luego se muestra el botón Start
-    document.getElementById('btn-stop').style.display = 'none';
-    document.getElementById('btn-reset').style.display = 'none';
-    document.getElementById('btn-start').style.display = 'flex';
+    btnStop.style.display = 'none';
+    btnReset.style.display = 'none';
+    btnStart.style.display = 'flex';
 }
